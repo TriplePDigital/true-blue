@@ -1,0 +1,36 @@
+---
+import Nav from '../components/Nav.tsx'
+import Hero from '../components/Hero.astro'
+import Portfolio from '../components/Portfolio.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<title>Astro + TailwindCSS</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href={Astro.resolve('../styles/global.css')} />
+	</head>
+
+	<body>
+		<Nav client:load />
+		<Hero />
+		<Portfolio />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+		<Hero />
+	</body>
+</html>
