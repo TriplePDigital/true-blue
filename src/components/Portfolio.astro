@@ -1,4 +1,10 @@
-<section class="h-screen bg-tertiary w-full flex flex-col py-8" id="next">
+---
+import Gallery from './Gallery.tsx'
+---
+
+
+
+<section class="min-h-screen bg-tertiary w-full flex flex-col py-8" id="next">
 	<div class="container mx-auto">
 		<h1 class="text-white font-bold text-5xl text-center">Our Portfolio</h1>
 		<p class="py-8 text-white w-2/3 text-center mx-auto">
@@ -15,5 +21,6 @@
 			<li class="text-gray-200">Motorbikes</li>
 			<li class="text-gray-200">Utility vechicles</li>
 		</ul>
+		<Gallery client:visible />
 	</div>
 </section>

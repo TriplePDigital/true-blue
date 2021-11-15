@@ -1,11 +1,16 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
 import Button from '../components/Button'
+import Tracker from '@openreplay/tracker'
 
 const Nav = () => {
 	const [colorChange, setColorchange] = useState(false)
+	const tracker = new Tracker({
+		projectKey: '1E6CElr8PHsRsnFPgDX0'
+	})
 
 	useEffect(() => {
+		tracker.start()
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
 	}, [])
@@ -21,7 +26,7 @@ const Nav = () => {
 		<nav
 			className={`fixed py-2 top-0 transition-all w-full ${
 				colorChange
-					? 'xl:bg-overlayNav xl:border-b xl:border-gray-300 xl:shadow-md xl:text-black'
+					? 'md:bg-overlayNav md:border-b md:border-gray-300 md:shadow-md md:text-black'
 					: 'bg-transparent border-0 border-transparent'
 			} xl:min-h-16 min-h-1/3  text-gray-100 z-10`}
 		>
