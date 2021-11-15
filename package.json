@@ -16,7 +16,9 @@
 		"tailwindcss": "^2.1.2"
 	},
 	"dependencies": {
+		"@openreplay/tracker": "^3.4.7",
 		"astro-seo": "^0.4.1",
+		"cloudinary-react": "^1.7.0",
 		"react-feather": "^2.0.9",
 		"react-scroll": "^1.8.4",
 		"styled-components": "^5.3.3"
