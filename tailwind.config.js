@@ -13,7 +13,7 @@ module.exports = {
 				tertiary: '#073C5D',
 				overlay: 'rgba(31, 50, 62, 0.79)',
 				overlayWhite: 'rgba(255, 255, 255, 0.3)',
-				overlayNav: 'rgba(255, 255, 255, 0.7)'
+				overlayNav: 'rgba(255, 255, 255, 0.85)'
 			},
 			zIndex: {
 				'ng-1': '-1',
