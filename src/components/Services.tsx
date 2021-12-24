@@ -10,43 +10,36 @@ import {
 
 const services = [
 	{
-		title: 'Exterior Detailing',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
+		title: 'Sky Blue Express',
+		desc: 'This service comes with a vacuum windows inside wash entire outside wash $35 dollars.',
 		icon: <Camera size={28} />
 	},
 	{
-		title: 'Interior Detailing',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
+		title: 'True Blue Blue',
+		desc: 'A wash wax rims tires tire walls vacuum inside and out dashboard consul seats spotted carpet spot it if necessary only $50 dollars four spots $10 extra.',
 		icon: <Wind size={28} />
 	},
 	{
-		title: 'Complete Care',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
+		title: 'Ultra Blue',
+		desc: "Is a wash and wax. Windows inside and out rims tires tire walls. And carpet Spanic $10 extra shampoo if necessary or request it all door jams truck jam so Hood jam that's only $75.",
 		icon: <Umbrella size={28} />
 	},
 	{
-		title: 'Rim Restoration',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
+		title: 'True blue Ultimate Detailing',
+		desc: 'It consist of engine clean truck vacuum hood jam truck jam door jams shampoo interior or condition leather. Shampoo carpet windows inside and out. Dashboard Consol and smell good starts at 1:50 and up based on the condition of your car. True blue ultimate detail.',
 		icon: <RefreshCw size={28} />
-	},
-	{
-		title: 'Longterm Care',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
-		icon: <TrendingUp size={28} />
-	},
-	{
-		title: 'Guaranteed Satisfaction',
-		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam numquam ratione dolor iusto, id aperiam placeat, natus soluta amet quibusdam porro exercitationem nostrum ducimus aspernatur voluptatibus voluptas facere, quasi quam!',
-		icon: <Shield size={28} />
 	}
 ]
 
 const Services = () => {
 	return (
-		<section className="bg-primary w-full min-h-screen flex items-center justify-center">
-			<div className="container mx-auto flex flex-row flex-wrap px-28 py-20">
+		<section
+			className="bg-primary w-full min-h-screen flex items-center justify-center"
+			id="services"
+		>
+			<div className="container mx-auto flex flex-row flex-wrap items-center justify-center xl:px-28 px-5 py-20">
 				{services.map((service, index) => (
-					<div className="flex flex-row w-1/3 my-8 justify-between">
+					<div className="flex flex-row xl:w-1/3 w-full my-8 justify-between">
 						<div
 							className="bg-secondary text-primary w-16 h-16 rounded-full object-cover flex items-center justify-center"
 							key={index}
